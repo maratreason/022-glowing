@@ -1,0 +1,496 @@
+extends pug/base
+
+append content
+    include pug/includes/header
+
+    main
+        article
+            //- Hero
+            section.section.hero(id="home" aria-label="hero" data-section)
+                .container
+                    ul.has-scrollbar
+
+                        li.scrollbar-item
+                            .hero-card.has-bg-image(style="background-image: url(images/hero-banner-1.jpg);")
+                                .card-content
+                                    h1.h1.hero-title Reveal The
+                                        br
+                                        | Beauty of Skin
+                                    p.hero-text.
+                                        Made using clean, non-toxic ingredients, our products are designed for everyone.
+                                    p.price Starting at $7.99
+                                    a.btn.btn-primary(href="#") Shop Now
+                        li.scrollbar-item
+                            .hero-card.has-bg-image(style="background-image: url(images/hero-banner-2.jpg);")
+                                .card-content
+                                    h1.h1.hero-title Reveal The
+                                        br
+                                        | Beauty of Skin
+                                    p.hero-text.
+                                        Made using clean, non-toxic ingredients, our products are designed for everyone.
+                                    p.price Starting at $7.99
+                                    a.btn.btn-primary(href="#") Shop Now
+                        li.scrollbar-item
+                            .hero-card.has-bg-image(style="background-image: url(images/hero-banner-3.jpg);")
+                                .card-content
+                                    h1.h1.hero-title Reveal The
+                                        br
+                                        | Beauty of Skin
+                                    p.hero-text.
+                                        Made using clean, non-toxic ingredients, our products are designed for everyone.
+                                    p.price Starting at $7.99
+                                    a.btn.btn-primary(href="#") Shop Now
+
+            //- Collection
+            section.section.collection(id="collection" aria-label="collection" data-section)
+                .container
+                    ul.collection-list
+
+                        li
+                            .collection-card.has-before.hover-shine
+                                h2.h2.card-title Summer Collection
+                                p.card-text Starting at $17.99
+                                a.btn-link 
+                                    span.span Shop Now
+                                    ion-icon(name="arrow-forward" aria-hidden="true")
+                                .has-bg-image(style="background-image: url(images/collection-1.jpg);")
+                        li
+                            .collection-card.has-before.hover-shine
+                                h2.h2.card-title What’s New?
+                                p.card-text Get the glow
+                                a.btn-link 
+                                    span.span Discover Now
+                                    ion-icon(name="arrow-forward" aria-hidden="true")
+                                .has-bg-image(style="background-image: url(images/collection-2.jpg);")
+                        li
+                            .collection-card.has-before.hover-shine
+                                h2.h2.card-title Buy 1 Get 1
+                                p.cart-text Starting at $7.99
+                                a.btn-link 
+                                    span.span Discover Now
+                                    ion-icon(name="arrow-forward" aria-hidden="true")
+                                .has-bg-image(style="background-image: url(images/collection-3.jpg);")
+
+            //- Shop
+            section.section.shop(id="shop" aria-label="shop" data-section)
+                .container
+                    .title-wrapper
+                        h2.h2.section-title Our Bestsellers
+                        a.btn-link(href="#")
+                            span.span Shop All Products
+                            ion-icon(name="arrow-forward" aria-hidden="true")
+
+                    ul.has-scrollbar
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-01.jpg", alt="Facial cleanser" width="540" height="720" loading="lazy")
+                                    span.badge(aria-label="20% off") -20%
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        del.del $39.00
+                                        span.span $29.00
+                                    h3.h3
+                                        a.card-title(href="#") Facial cleanser
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-02.jpg", alt="Bio-shroom Rejuvenating Serum" width="540" height="720" loading="lazy")
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        span.span $29.00
+                                    h3
+                                        a.card-title(href="#") Bio-shroom Rejuvenating Serum
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-03.jpg", alt="Coffee Bean Caffeine Eye Cream" width="540" height="720" loading="lazy")
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        span.span $29.00
+                                    h3
+                                        a.card-title(href="#") Coffee Bean Caffeine Eye Cream
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-04.jpg", alt="Facial cleanser" width="540" height="720" loading="lazy")
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        span.span $29.00
+                                    h3
+                                        a.card-title(href="#") Facial cleanser
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-05.jpg", alt="Coffee Bean Caffeine Eye Cream" width="540" height="720" loading="lazy")
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        span.span Under $25
+                                    h3
+                                        a.card-title(href="#") Coffee Bean Caffeine Eye Cream
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-06.jpg", alt="Facial cleanser" width="540" height="720" loading="lazy")
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        span.span $29.00
+                                    h3
+                                        a.card-title(href="#") Facial cleanser
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+            //- Shop
+            section.section.shop(id="shop" aria-label="shop" data-section)
+                .container
+                    .title-wrapper
+                        h2.h2.section-title Under $25
+                        a.btn-link(href="#")
+                            span.span Shop All Products
+                            ion-icon(name="arrow-forward" aria-hidden="true")
+
+                    ul.has-scrollbar
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-07.jpg", alt="Facial cleanser" width="540" height="720" loading="lazy")
+                                    span.badge(aria-label="20% off") -20%
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        del.del $39.00
+                                        span.span $29.00
+                                    h3.h3
+                                        a.card-title(href="#") Facial cleanser
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-08.jpg", alt="Bio-shroom Rejuvenating Serum" width="540" height="720" loading="lazy")
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        span.span $29.00
+                                    h3
+                                        a.card-title(href="#") Bio-shroom Rejuvenating Serum
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-09.jpg", alt="Coffee Bean Caffeine Eye Cream" width="540" height="720" loading="lazy")
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        span.span $29.00
+                                    h3
+                                        a.card-title(href="#") Coffee Bean Caffeine Eye Cream
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-10.jpg", alt="Facial cleanser" width="540" height="720" loading="lazy")
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        span.span $29.00
+                                    h3
+                                        a.card-title(href="#") Facial cleanser
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+                        li.scrollbar-item
+                            .shop-card
+                                .card-banner.img-holder(style="--width: 540; --height: 720;")
+                                    img.img-cover(src="images/product-11.jpg", alt="Coffee Bean Caffeine Eye Cream" width="540" height="720" loading="lazy")
+
+                                    .card-actions
+                                        button.action-btn(aria-label="add to cart")
+                                            ion-icon(name="bag-handle-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="add to whishlist")
+                                            ion-icon(name="star-outline" aria-hidden="true")
+                                        button.action-btn(aria-label="compare")
+                                            ion-icon(name="repeat-outline" aria-hidden="true")
+
+                                .card-content
+                                    .price
+                                        span.span Under $25
+                                    h3
+                                        a.card-title(href="#") Coffee Bean Caffeine Eye Cream
+                                    .card-rating
+                                        .rating-wrapper(aria-label="5 start rating")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                            ion-icon(name="star" aria-hidden="true")
+                                        p.rating-text 5170 reviews
+
+
+            //- Banner
+            section.section.banner(aria-label="banner" data-section)
+                .container
+                    ul.banner-list
+                        li
+                            .banner-card.banner-card-1.has-before.hover-shine
+                                p.card-subtitle New Collection
+                                h2.h2.card-title Discover Our Autumn Skincare
+                                a.btn.btn-secondary(href="#") Explore More
+
+                                .has-bg-image(style="background-image: url(images/banner-1.jpg);")
+                        li
+                            .banner-card.banner-card-2.has-before.hover-shine
+                                h2.h2.card-title 25% off Everything
+                                p.card-text Makeup with extended range in colors for every human.
+                                a.btn.btn-secondary(href="#") Shop Sale
+
+                                .has-bg-image(style="background-image: url(images/banner-2.jpg);")
+
+            //- Feature
+            section.section.feature(aria-label="feature" data-section)
+                .container
+                    h2.h2-large.section-title Why Shop with Glowing?
+
+                    ul.flex-list
+                        li.flex-item
+                            .feature-card
+                                img.card-icon(src="images/feature-1.jpg", alt="Guaranteed PURE" width="204" height="236" loading="lazy")
+                                h3.h3.card-title Guaranteed PURE
+                                p.card-text All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients
+                        li.flex-item
+                            .feature-card
+                                img.card-icon(src="images/feature-2.jpg", alt="Completely Cruelty-Free" width="204" height="236" loading="lazy")
+                                h3.h3.card-title Completely Cruelty-Free
+                                p.card-text All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients
+                        li.flex-item
+                            .feature-card
+                                img.card-icon(src="images/feature-3.jpg", alt="Ingredient Sourcing" width="204" height="236" loading="lazy")
+                                h3.h3.card-title Ingredient Sourcing
+                                p.card-text All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients
+
+            //- Offer
+            section.section.offer(id="offer" aria-label="offer" data-section)
+                .container
+                    figure.offer-banner
+                        img.w-100(src="images/offer-banner-1.jpg", alt="offer products" width="305" height="400" loading="lazy")
+                        img.w-100(src="images/offer-banner-2.jpg", alt="offer products" width="450" height="625" loading="lazy")
+
+                    .offer-content
+                        p.offer-subtitle
+                            span.span Special Offer
+                            span.badge(aria-label="20% off") -20%
+                        h2.h2-large.section-title Mountain Pine Bath Oil
+                        p.section-text Made using clean, non-toxic ingredients, our products are designed for everyone.
+
+                        .countdown
+                            span.time(aria-label="days") 15
+                            span.time(aria-label="hours") 21
+                            span.time(aria-label="minutes") 46
+                            span.time(aria-label="seconds") 08
+                        a.btn.btn-primary(href="#") Get Only $39.00
+
+            //- Blog
+            section.section.blog(id="blog" aria-label="blog" data-section)
+                .container
+                    h2.h2-large.section-title More to Discover
+                    ul.flex-list
+                        li.flex-item
+                            .blog-card
+                                figure.card-banner.img-holder.has-before.hover-shine(style="--width: 700; --height: 450")
+                                    img.img-cover(src="images/blog-1.jpg", alt="Find a Store" width="700" height="450" loading="lazy")
+                                h3.h3
+                                    a.card-title(href="#") Find a Store
+                                a.btn-link(href="#")
+                                    span.span Our Store
+                                    ion-icon(name="arrow-forward-outline" aria-hidden="true")
+                        li.flex-item
+                            .blog-card
+                                figure.card-banner.img-holder.has-before.hover-shine(style="--width: 700; --height: 450")
+                                    img.img-cover(src="images/blog-2.jpg", alt="From Our Blog" width="700" height="450" loading="lazy")
+                                h3.h3
+                                    a.card-title(href="#") From Our Blog
+                                a.btn-link(href="#")
+                                    span.span Our Store
+                                    ion-icon(name="arrow-forward-outline" aria-hidden="true")
+                        li.flex-item
+                            .blog-card
+                                figure.card-banner.img-holder.has-before.hover-shine(style="--width: 700; --height: 450")
+                                    img.img-cover(src="images/blog-3.jpg", alt="Our Story" width="700" height="450" loading="lazy")
+                                h3.h3
+                                    a.card-title(href="#") Our Story
+                                a.btn-link(href="#")
+                                    span.span Our Store
+                                    ion-icon(name="arrow-forward-outline" aria-hidden="true")
+                        
+    include pug/includes/footer
+
+    //- Back to top
+    a.back-top-btn(href="#top" aria-label="back to top" data-back-top-btn)
+        ion-icon(name="arrow-up" aria-hidden="true")
+//- Остановился 1:49:00

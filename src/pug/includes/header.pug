@@ -1,0 +1,66 @@
+header.header
+    .alert
+        .container
+            .alert-text Free Shipping On All U.S. Orders $50+
+    .header-top(data-header)
+        .container
+            button.nav-open-btn(aria-label="open menu" data-nav-toggler)
+                span.line.line-1
+                span.line.line-2
+                span.line.line-3
+
+            .input-wrapper
+                input.search-field(type="search" name="search" placeholder="Search product")
+                button.search-submit(aria-label="search")
+                    ion-icon(name="search-outline" aria-hidden="true")
+
+            a.logo(href="#")
+                img(src="images/logo.png", alt="Glowing" width="179" height="26")
+                
+            .header-actions
+                button.header-action-btn(aria-label="user")
+                    ion-icon(name="person-outline" aria-hidden="true")
+                button.header-action-btn(aria-label="favourite item")
+                    ion-icon(name="star-outline" aria-hidden="true")
+                    span.btn-badge 0
+                data.btn-text(value="0") $0.00
+                button.header-action-btn(aria-label="cart item")
+                    ion-icon(name="bag-handle-outline" aria-hidden="true")
+                    span.btn-badge 0
+
+            nav.navbar
+                ul.navbar-list
+                    li
+                        a.navbar-link.has-after(href="#home") Home
+                    li
+                        a.navbar-link.has-after(href="#collection") Collection
+                    li
+                        a.navbar-link.has-after(href="#shop") Shop
+                    li
+                        a.navbar-link.has-after(href="#offer") Offer
+                    li
+                        a.navbar-link.has-after(href="#blog") Blog
+
+//- mobile navbar
+.sidebar
+    .mobile-navbar(data-navbar)
+        .wrapper
+            a.logo(href="#")
+                img(src="images/logo.png", alt="Glowing" width="179" height="26")
+
+            button.nav-close-btn(aria-label="close menu" data-nav-toggler)
+                ion-icon(name="close-outline" aria-hidden="true")
+
+        ul.navbar-list
+            li
+                a.navbar-link(href="#home" data-nav-link) Home
+            li
+                a.navbar-link(href="#collection" data-nav-link) Collection
+            li
+                a.navbar-link(href="#shop" data-nav-link) Shop
+            li
+                a.navbar-link(href="#offer" data-nav-link) Offer
+            li
+                a.navbar-link(href="#blog" data-nav-link) Blog
+
+    .overlay(data-nav-toggler data-overlay)
